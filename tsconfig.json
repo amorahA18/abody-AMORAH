@@ -1,36 +1,30 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ESNext",
+    "module": "ESNext",
     "jsx": "react-jsx",
-    "module": "es6",
     "moduleResolution": "node",
     "rootDir": "./",
     "baseUrl": "./src",
-    "noEmit": true,
-
-    "paths": {
-      "test/*": ["../test/*"]
-    },
-
+    "noEmit": false,
     "declaration": true,
     "sourceMap": true,
     "outDir": "./dist",
     "importHelpers": true,
-
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-
     "forceConsistentCasingInFileNames": true,
-
-    "strict": false,
+    "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": false,
-
-    "types": ["node"]
+    "types": ["node"],
+    "paths": {
+      "test/*": ["../test/*"]
+    }
   },
-  "include": ["test", "src"]
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["dist"]
 }
