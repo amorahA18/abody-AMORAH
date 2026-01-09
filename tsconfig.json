@@ -5,7 +5,7 @@
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "rootDir": "./",
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "noEmit": false,
     "declaration": true,
     "sourceMap": true,
@@ -15,16 +15,11 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": false,
-    "types": ["node"],
-    "paths": {
-      "test/*": ["../test/*"]
-    }
+    "types": ["node"]
   },
-  "include": ["src/**/*", "test/**/*"],
-  "exclude": ["dist"]
+  "include": ["**/*.ts", "**/*.tsx", "test/**/*"],
+  "exclude": ["dist", "node_modules"]
 }
