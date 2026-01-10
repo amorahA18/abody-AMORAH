@@ -5,7 +5,10 @@
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "rootDir": "./",
-    "baseUrl": "./",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./client/src/*"]
+    },
     "noEmit": false,
     "declaration": true,
     "sourceMap": true,
@@ -20,6 +23,6 @@
     "isolatedModules": false,
     "types": ["node"]
   },
-  "include": ["**/*.ts", "**/*.tsx", "test/**/*"],
+  "include": ["client/src/**/*.ts", "client/src/**/*.tsx", "test/**/*"],
   "exclude": ["dist", "node_modules"]
 }
